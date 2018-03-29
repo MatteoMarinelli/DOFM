@@ -7,6 +7,8 @@ import android.webkit.WebView;
 
 public class Webviewer extends AppCompatActivity {
 
+    // Da non modificare, serve per aprire il browser predefinito al link della ListView
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

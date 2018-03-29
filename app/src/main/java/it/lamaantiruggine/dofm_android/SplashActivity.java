@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 public class SplashActivity extends AppCompatActivity {
 
+    // Da non modificare, la splash screen è presente in @drawable/splash_background.jpg
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
