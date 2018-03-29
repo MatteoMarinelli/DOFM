@@ -13,7 +13,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedViewHolder> {
     private RSSObject rssObject;
     private Context mContext;
     private LayoutInflater inflater;
-    public String url_item;
+    public static String url_item;
 
     public FeedAdapter(RSSObject rssObject, Context mContext) {
         this.rssObject = rssObject;

@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     RSSObject rssObject;
 
     // RSS LINK
-    String ciao;
     private final String RSS_link = "https://www.dofm.altervista.org/feed/";
     private final String RSS_to_Json_API = "https://api.rss2json.com/v1/api.json?rss_url=";
 

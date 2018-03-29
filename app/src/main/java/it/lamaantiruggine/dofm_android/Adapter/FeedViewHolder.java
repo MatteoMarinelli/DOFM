@@ -15,7 +15,7 @@ class FeedViewHolder extends RecyclerView.ViewHolder implements View.OnClickList
 
     private RSSObject rssObject;
     public TextView txtTitle, txtPubDate, txtContent, txtCategory;
-    public String item_url;
+
     private ItemClickListener itemClickListener;
     private Intent i = new Intent(itemView.getContext(), Webviewer.class);
 
@@ -23,7 +23,6 @@ class FeedViewHolder extends RecyclerView.ViewHolder implements View.OnClickList
         super(itemView);
         txtTitle = (TextView)itemView.findViewById(R.id.txtTitle);
         txtPubDate = (TextView)itemView.findViewById(R.id.txtPubDate);
-        // txtContent = (TextView)itemView.findViewById(R.id.txtContent);
         txtCategory = (TextView)itemView.findViewById(R.id.txtCategory);
 
         itemView.setOnClickListener(this);

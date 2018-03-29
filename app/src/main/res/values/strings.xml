@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">DOFM - News</string>
+    <string name="app_name">DOFM</string>
+    <string name="title_activity_login">Accedi al DOFM</string>
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in">Accedi</string>
+    <string name="action_sign_in_short">Accedi</string>
+    <string name="error_incorrect_password">Password sbagliata</string>
+    <string name="error_field_required">Password sbagliata</string>
 </resources>
