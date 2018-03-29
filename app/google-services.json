@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "857891574326",
+    "firebase_url": "https://dofm-android.firebaseio.com",
+    "project_id": "dofm-android",
+    "storage_bucket": "dofm-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857891574326:android:8b1695f242c2dd01",
+        "android_client_info": {
+          "package_name": "it.lamaantiruggine.dofm_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857891574326-65l9e93rjgest7gjuq9ermfd6udaldcr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.lamaantiruggine.dofm_android",
+            "certificate_hash": "cf670643d87902c20a6865be927113de2992fbeb"
+          }
+        },
+        {
+          "client_id": "857891574326-4v53qlvk54j325ka9d4fb3hcbvlii0ih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh7OAkMT5DHPfyoZzDlCmPwQgI3eF_63k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857891574326-4v53qlvk54j325ka9d4fb3hcbvlii0ih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
