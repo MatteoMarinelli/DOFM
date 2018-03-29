@@ -6,5 +6,13 @@
     <string name="action_sign_in">Accedi</string>
     <string name="action_sign_in_short">Accedi</string>
     <string name="error_incorrect_password">Password sbagliata</string>
+
+    <!-- Strings related to drawer menu -->
     <string name="error_field_required">Password sbagliata</string>
+    <string name="title_activity_drawer">Menu</string>
+
+    <string name="navigation_drawer_open">Apri menu</string>
+    <string name="navigation_drawer_close">Chiudi menu</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
