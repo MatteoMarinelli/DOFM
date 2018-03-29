@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (checker(password.getText().toString(),PASSWORD)) {
-                    Intent go_to_main_activity = new Intent(LoginActivity.this, StartActivity.class);
+                    Intent go_to_main_activity = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(go_to_main_activity);
                 } else {
                     Toast.makeText(getApplicationContext(),"Password errata.", Toast.LENGTH_SHORT).show();

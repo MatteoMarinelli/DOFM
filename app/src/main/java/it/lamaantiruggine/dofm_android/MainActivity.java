@@ -2,44 +2,40 @@ package it.lamaantiruggine.dofm_android;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.gson.Gson;
-
 import it.lamaantiruggine.dofm_android.Adapter.FeedAdapter;
 import it.lamaantiruggine.dofm_android.Common.HTTPDataHandler;
 import it.lamaantiruggine.dofm_android.Model.RSSObject;
-public class MainActivity extends AppCompatActivity {
 
+public class MainActivity extends AppCompatActivity {
+    // THIS IS CALLED LIKE "CALENDARIO" IN OTHER ACTIVITIES
     Toolbar toolbar;
     RecyclerView recyclerView;
     RSSObject rssObject;
-
     // RSS LINK
     private final String RSS_link = "https://www.dofm.altervista.org/feed/";
     private final String RSS_to_Json_API = "https://api.rss2json.com/v1/api.json?rss_url=";
+    private DrawerLayout mDrawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         toolbar = (Toolbar)findViewById(R.id.toolbar);
-        toolbar.setTitle("DOFM - News");
-        setSupportActionBar(toolbar);
+        toolbar.setTitle("DOFM - Calendario");
 
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getBaseContext(),LinearLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(linearLayoutManager);
-
         loadRSS();
     }
 
@@ -86,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == R.id.menu_refresh) {
             loadRSS();
+        } else if (item.getItemId() == R.id.home) {
+            mDrawerLayout.openDrawer(GravityCompat.START);
         }
         return true;
     }
