@@ -1,7 +1,9 @@
 package it.lamaantiruggine.dofm_android;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // PER COSE TIPO IL NOME UTENTE
+        SharedPreferences settings = getSharedPreferences("UserInfo", 0);
+        SharedPreferences.Editor editor = settings.edit();
+        String nome_utente = settings.getString("NOME", "");
+
+        // Definizione dei vari bottoni
         Button aggiorna_button = (Button) findViewById(R.id.aggiorna_button);
         Button whatsapp_group_button = (Button) findViewById(R.id.whatsapp_group_button);
         Button whatsapp_matteo_button = (Button) findViewById(R.id.whatsapp_matteo_button);
